@@ -1,0 +1,99 @@
+.card {
+  box-shadow: 0px 4px 8px 0px rgba($color-light-grey, 0.9);
+  font-family: $font-detail;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.content {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba($color-dark, 0.1);
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  background: 0 0;
+  color: #1E88E5 !important;
+  border: none;
+  padding: 5px 20px !important;
+  font: inherit;
+  font-size: 50px !important
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  color: #0D47A1 !important;
+  background-color: transparent !important
+}
+
+.owl-dots {
+  display: none;
+}
+
+
+button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0
+}
+
+.item{
+  display: none
+}
+
+.owl-nav {
+  text-align: center;
+}
+
+.next {
+  display: block !important;
+  position: relative;
+  transform: scale(0.8);
+  transition-duration: 0.3s;
+  opacity: 0.6;
+
+}
+
+.prev {
+  display: block !important;
+  position: relative;
+  transform: scale(0.8);
+  transition-duration: 0.3s;
+  opacity: 0.6;
+}
+
+.item.show {
+  display: block;
+  transition-duration: 0.4s
+}
+
+@media screen and (max-width: 999px) {
+
+  .next,
+  .prev {
+    transform: scale(1);
+    opacity: 1
+  }
+
+  .item {
+    display: block !important
+  }
+}
+
+
+.main-container__btn-testimonial {
+  background-color: transparent;
+  border: 1px solid $color-accent;
+  color: $color-accent;
+  padding: 10px 40px;
+
+  transition: all 0.3s ease-out;
+
+  &:hover,
+  &:active {
+    background-color: $color-accent;
+    color: $color-light;
+  }
+}
+

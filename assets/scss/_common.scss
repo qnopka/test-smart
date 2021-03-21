@@ -1,0 +1,39 @@
+body {
+  color: $color-dark;
+  background-color: $color-light;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: $font-size;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 700;
+  font-family: $font-header;
+  margin: 0.2em 0;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 3.3em;
+  }
+  p {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+}
