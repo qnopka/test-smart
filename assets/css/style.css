@@ -756,7 +756,7 @@ main {
 }
 
 .slick-next {
-  right: 52px;
+  right: 62px;
   z-index: 99;
 }
 
@@ -772,6 +772,11 @@ main {
   padding: 5px;
   opacity: 0.8;
   border-radius: 5px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: inherit;
+  font-size: 35px;
 }
 
 .testimonials__btn {
@@ -841,10 +846,10 @@ main {
     margin: 0px 2px;
   }
   .slick-prev {
-    left: 0px;
+    left: -7px;
   }
   .slick-next {
-    right: 7vw;
+    right: 8vw;
   }
 }
 
@@ -869,7 +874,7 @@ main {
     padding: 10px 20px;
   }
   .slick-next {
-    right: 5vw;
+    right: 6vw;
   }
 }
 
