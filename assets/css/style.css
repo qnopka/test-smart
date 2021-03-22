@@ -568,6 +568,13 @@ header {
 
 .header-navbar__link {
   color: #ffffff;
+  -webkit-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.header-navbar__link:hover, .header-navbar__link:active {
+  color: #da6f5b;
 }
 
 .header__btn {
