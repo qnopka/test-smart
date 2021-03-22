@@ -573,7 +573,7 @@ header {
 .header__btn {
   background-color: #da6f5b;
   color: #ffffff;
-  padding: 5px 40px;
+  padding: 10px 40px;
   border-radius: 3px;
   border: none;
   -webkit-transition: all 0.3s ease-out;
