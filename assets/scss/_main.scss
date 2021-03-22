@@ -17,7 +17,7 @@ main {
   }
 }
 
-.card {
+.slick-slide .card {
   box-shadow: 0px 4px 8px 0px rgba($color-light-grey, 0.9);
   font-family: $font-detail;
   font-style: italic;
@@ -37,10 +37,6 @@ main {
 
 .slick-slide {
   margin: 0px 20px;
-}
-
-.slick__item {
-
 }
 
 
@@ -67,10 +63,12 @@ main {
 
 .slick-prev {
   left: 52px;
+  z-index: 99;
 }
 
 .slick-next {
   right: 52px;
+  z-index: 99;
 }
 
 .slick-dots {
@@ -78,4 +76,43 @@ main {
 }
 
 
+
+@media (max-width: 992px) {
+  .slick-list, .draggable {
+    padding: 1px 10px !important;
+  }
+  .slider {
+    width: 90vw;
+    margin: 100px auto;
+  }
+  .slick-active {
+    width: 80vw!important;
+  }
+  .slick-slide {
+    margin: 0px 2px;
+  }
+
+  .slick-prev {
+    left: 0px;
+  }
+
+  .slick-next {
+    right: 7vw;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .slick-next {
+    right: 5vw;
+  }
+}
+
+
+@media (max-width: 420px) {
+
+  .slick-next {
+    right: 3vw;
+  }
+}
 

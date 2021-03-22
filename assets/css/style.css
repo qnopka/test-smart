@@ -526,6 +526,13 @@ h1 {
   margin: 0.2em 0;
 }
 
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin: 0.2em 0;
+}
+
 header {
   background-color: #2d3651;
   background-image: url("../img/img-header.jpg");
@@ -701,7 +708,7 @@ main {
   color: #ffffff;
 }
 
-.card {
+.slick-slide .card {
   -webkit-box-shadow: 0px 4px 8px 0px rgba(172, 172, 172, 0.9);
           box-shadow: 0px 4px 8px 0px rgba(172, 172, 172, 0.9);
   font-family: "Ovo", sans-serif;
@@ -745,10 +752,12 @@ main {
 
 .slick-prev {
   left: 52px;
+  z-index: 99;
 }
 
 .slick-next {
   right: 52px;
+  z-index: 99;
 }
 
 .slick-dots {
@@ -763,6 +772,9 @@ main {
   }
   h1 {
     font-size: 3.3em;
+  }
+  h2 {
+    font-size: 2.3em;
   }
   p {
     font-size: 0.95em;
@@ -792,11 +804,33 @@ main {
     margin: 5vw 0;
     padding: 5px 20vw;
   }
+  .slick-list, .draggable {
+    padding: 1px 10px !important;
+  }
+  .slider {
+    width: 90vw;
+    margin: 100px auto;
+  }
+  .slick-active {
+    width: 80vw !important;
+  }
+  .slick-slide {
+    margin: 0px 2px;
+  }
+  .slick-prev {
+    left: 0px;
+  }
+  .slick-next {
+    right: 7vw;
+  }
 }
 
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5em;
+  }
+  h2 {
+    font-size: 1.9em;
   }
   p {
     font-size: 0.9em;
@@ -807,8 +841,23 @@ main {
   }
 }
 
+@media (max-width: 550px) {
+  .slick-next {
+    right: 5vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .slick-next {
+    right: 3vw;
+  }
+}
+
 @media (max-width: 350px) {
   h1 {
     font-size: 2.2em;
+  }
+  h2 {
+    font-size: 1.5em;
   }
 }
