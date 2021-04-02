@@ -842,7 +842,7 @@ main {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin: 5vw 0;
+    margin: 2vw 0;
     padding: 5px 20vw;
   }
   .slick-list, .draggable {
