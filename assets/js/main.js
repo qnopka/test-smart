@@ -1,8 +1,3 @@
-$(document).ready(function () {
-
-    $('.animated-button').on('click', function () {
-
-        $('.animated-icon').toggleClass('open');
-    });
-
+$('.animated-icon').click(function() {
+    $('.navbar-nav').is(':hidden') ? $(this).addClass('open') : $(this).removeClass('open') ;
 });

@@ -805,6 +805,9 @@ main {
     padding: 4vw 2vw;
     background-color: #2d2d35;
   }
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
   h1 {
     font-size: 3.3em;
   }
@@ -823,6 +826,9 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .header-navbar__item {
+    margin-right: 0;
   }
   .header-navbar__item--active {
     text-decoration: underline;
